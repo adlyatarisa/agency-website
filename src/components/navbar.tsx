@@ -26,11 +26,11 @@ export default function Navbar({ className = '' }) {
 
   return (
     <nav
-      className={`flex items-center justify-between p-10 bg-white shadow-md ${className}`}
+      className={`flex items-center justify-between p-10 bg-tranparent ${className}`}
     >
       <Link
         href={'/'}
-        className="flex scale-75 items-center ml-[120px] lg:scale-100"
+        className="flex scale-75 items-center ml-[85px] lg:scale-100"
       >
         <Image src="/navbar/Logo.svg" width={211} height={70} alt="logo" />
       </Link>
@@ -47,7 +47,7 @@ export default function Navbar({ className = '' }) {
       </div>
       <Link
         href="/get-started"
-        className="hidden lg:flex bg-blue-primary text-white py-3 px-6 rounded-xl mr-[60px]"
+        className="hidden lg:flex bg-blue-primary text-white py-3 px-6 rounded-xl mr-[30px]"
       >
         Get Started Free
       </Link>

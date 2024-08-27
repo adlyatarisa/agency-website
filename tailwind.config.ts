@@ -25,8 +25,12 @@ const config: Config = {
         green: {
           primary: '#26CF8E',
           light: '#15BEE3',
-          medium: '00BA34',
+          medium: '#00BA34',
         },
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        space: ['Space Grotesk', 'sans-serif'],
       },
     },
   },
