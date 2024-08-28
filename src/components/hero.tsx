@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Hero() {
@@ -32,17 +33,18 @@ export default function Hero() {
             inceptos himenaeos. Donec tristique nibh ipsum dignissim.
           </div>
           <div className="flex flex-row items-center ml-[120px] mt-[36px]">
-            <div className="w-[200px] h-[60px] px-5 py-4 bg-blue-primary rounded-[10px] flex-col justify-center items-center gap-2.5 inline-flex">
-              <div className="justify-center items-center gap-[9px] inline-flex">
-                <div className="text-right text-white text-base font-inter leading-normal">
-                  Discover More
-                </div>
-              </div>
-            </div>
+            <Link
+              href="/pages"
+              className="bg-blue-primary rounded-xl py-[16px] px-[20px] items-center flex text-white text-base font-inter leading-normal"
+            >
+              Discover More
+            </Link>
             <div className="text-blue-dark text-base font-semibold font-inter leading-normal ml-[30px] mr-[9px]">
               Explore Service
             </div>
-            <Image src="/hero/arrow.svg" width={24} height={24} alt="arrow" />
+            <Link href="/pricing">
+              <Image src="/hero/arrow.svg" width={24} height={24} alt="arrow" />
+            </Link>
           </div>
           <div className="flex flex-row items-center ml-[120px] mt-[26px]">
             <Image src="/hero/check.svg" width={24} height={24} alt="arrow" />
@@ -62,7 +64,7 @@ export default function Hero() {
         <div className="group2 ml-[180px]">
           <div className="absolute w-[381px] h-[381px] opacity-40 bg-green-light rounded-full blur-[300px]" />
           <div className="absolute w-[298px] h-[281px] opacity-5 bg-[#4732b9] rounded-[19px] mt-[-100px]" />
-          <div className="kotak1 absolute w-[236.85px] h-[222.32px] bg-white rounded-lg shadow mt-[-190px] ml-[-165px]">
+          <div className="kotak1 absolute w-[236.85px] h-[222.32px] bg-white rounded-lg shadow-sm mt-[-190px] ml-[-165px]">
             <div className="absolute graph ml-[24.8px] mt-[110.62px]">
               <Image
                 src="/hero/graph.svg"
@@ -109,16 +111,16 @@ export default function Hero() {
               </span>
             </div>
           </div>
-          <div className="absolute w-[353.97px] h-[353.97px] bg-white rounded-[21.71px] shadow-md mt-[63px] ml-[-65px]">
+          <div className="kotak2 absolute w-[353.97px] h-[353.97px] bg-white rounded-[21.71px] shadow-lg mt-[63px] ml-[-65px]">
             <div className="w-[316.21px] h-[201.53px] left-[18.88px] top-[133.57px] absolute">
-              <div className="w-[316.21px] h-[0px] left-0 top-0 absolute opacity-20 border border-[#141f39]"></div>
-              <div className="w-[316.21px] h-[0px] left-[-0px] top-[28.79px] absolute opacity-20 border border-[#141f39]"></div>
-              <div className="w-[316.21px] h-[0px] left-[-0px] top-[57.58px] absolute opacity-20 border border-[#141f39]"></div>
-              <div className="w-[316.21px] h-[0px] left-[-0px] top-[86.37px] absolute opacity-20 border border-[#141f39]"></div>
-              <div className="w-[316.21px] h-[0px] left-[-0px] top-[115.16px] absolute opacity-20 border border-[#141f39]"></div>
-              <div className="w-[316.21px] h-[0px] left-[-0px] top-[143.95px] absolute opacity-20 border border-[#141f39]"></div>
-              <div className="w-[316.21px] h-[0px] left-[-0px] top-[172.74px] absolute opacity-20 border border-[#141f39]"></div>
-              <div className="w-[316.21px] h-[0px] left-[-0px] top-[201.53px] absolute opacity-20 border border-[#141f39]"></div>
+              <div className="w-[316.21px] h-[0px] left-0 top-0 absolute opacity-20 border border-dashed border-[#141f39]"></div>
+              <div className="w-[316.21px] h-[0px] left-[-0px] top-[28.79px] absolute opacity-20 border border-dashed border-[#141f39]"></div>
+              <div className="w-[316.21px] h-[0px] left-[-0px] top-[57.58px] absolute opacity-20 border border-dashed border-[#141f39]"></div>
+              <div className="w-[316.21px] h-[0px] left-[-0px] top-[86.37px] absolute opacity-20 border border-dashed border-[#141f39]"></div>
+              <div className="w-[316.21px] h-[0px] left-[-0px] top-[115.16px] absolute opacity-20 border border-dashed border-[#141f39]"></div>
+              <div className="w-[316.21px] h-[0px] left-[-0px] top-[143.95px] absolute opacity-20 border border-dashed border-[#141f39]"></div>
+              <div className="w-[316.21px] h-[0px] left-[-0px] top-[172.74px] absolute opacity-20 border border-dashed border-[#141f39]"></div>
+              <div className="w-[316.21px] h-[0px] left-[-0px] top-[201.53px] absolute opacity-20 border border-dashed border-[#141f39]"></div>
             </div>
             <div className="w-[316.21px] h-[118.35px] left-[18.88px] top-[146.78px] absolute"></div>
             <div className="w-[216.63px] h-[11.33px] left-[18.88px] top-[80.23px] absolute">
@@ -148,6 +150,30 @@ export default function Hero() {
               <div className="w-[134.51px] h-[23.89px] left-0 top-0 absolute text-[#141f39] text-base font-semibold font-['Inter']">
                 Data Analysis
               </div>
+            </div>
+            <div className="absolute mt-[145px] ml-[16px]">
+              <Image
+                src="/hero/red-line.svg"
+                width={320}
+                height={106}
+                alt="red-line"
+              />
+            </div>
+            <div className="absolute mt-[175px] ml-[16px]">
+              <Image
+                src="/hero/green-line.svg"
+                width={320}
+                height={67}
+                alt="green-line"
+              />
+            </div>
+            <div className="absolute mt-[196px] ml-[16px]">
+              <Image
+                src="/hero/blue-line.svg"
+                width={320}
+                height={70}
+                alt="blue-line"
+              />
             </div>
           </div>
           <div className="absolute w-[296px] h-[287px] bg-white rounded-[18.13px] shadow-xl mt-[-190px] ml-[100px]">
@@ -247,7 +273,27 @@ export default function Hero() {
                 / Daily
               </span>
             </div>
+            <div className="absolute mt-[615px] ml-[250px]">
+              <Image
+                src="/hero/purple-vector.svg"
+                width={59}
+                height={63}
+                alt="purple-vector"
+              />
+            </div>
           </div>
+        </div>
+      </div>
+      <div className="logo-sponsor flex flex-row mt-[287px] ml-[120px]">
+        <Image src="/hero/logo1.svg" width={234} height={37} alt="logo1" />
+        <div className="ml-[90px]">
+          <Image src="/hero/logo2.svg" width={234} height={37} alt="logo2" />
+        </div>
+        <div className="ml-[90px]">
+          <Image src="/hero/logo3.svg" width={234} height={37} alt="logo3" />
+        </div>
+        <div className="ml-[90px]">
+          <Image src="/hero/logo4.svg" width={234} height={37} alt="logo4" />
         </div>
       </div>
     </section>
