@@ -14,3 +14,40 @@
     text-wrap: balance;
   }
 }
+
+.bg-custom-gradient {
+  background: linear-gradient(
+    45deg,
+    #0064ff 0%,
+    #80b2ff 18.54%,
+    #4f6d9c 41.98%,
+    #80b2ff 66.98%,
+    #0064ff 100%
+  );
+  background-attachment: fixed;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-custom-gradient2 {
+  background: linear-gradient(
+    to right,
+    #010813 0%,
+    #050f1d 18.54%,
+    #10213d 41.98%,
+    #132a4e 66.98%,
+    #1f4785 100%
+  );
+}
+
+.bg-custom-gradient3 {
+  background: linear-gradient(
+    45deg,
+    #0044ae 0%,
+    /* Warna pertama */ #042962 18.54%,
+    /* Warna kedua */ #013586 41.98%,
+    /* Warna ketiga */ #0064ff 66.98%,
+    /* Warna keempat */ #80b2ff 100% /* Warna terakhir */
+  );
+}

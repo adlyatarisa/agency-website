@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="flex flex-row items-center ml-[120px] mt-[36px]">
             <Link
               href="/pages"
-              className="bg-blue-primary rounded-xl py-[16px] px-[20px] items-center flex text-white text-base font-inter leading-normal hover:bg-[#7784ee]"
+              className="bg-blue-primary rounded-xl py-[16px] px-[20px] items-center flex text-white text-base font-inter leading-normal hover:bg-[#311CCF] hover:scale-[1.01]"
             >
               Discover More
             </Link>

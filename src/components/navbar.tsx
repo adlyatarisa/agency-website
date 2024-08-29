@@ -47,7 +47,7 @@ export default function Navbar({ className = '' }) {
       </div>
       <Link
         href="/get-started"
-        className="hidden lg:flex bg-blue-primary text-white py-3 px-6 md:px-5 md:ml-[15px] rounded-xl md:mr-[30px] hover:bg-[#7784ee]"
+        className="hidden lg:flex bg-blue-primary text-white py-3 px-6 md:px-5 md:ml-[15px] rounded-xl md:mr-[30px] hover:bg-[#311CCF] hover:scale-[1.01]"
       >
         Get Started Free
       </Link>
