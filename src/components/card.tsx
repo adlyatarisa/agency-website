@@ -1,7 +1,19 @@
+'use client'
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
+import LoginModal from '@/components/loginModal'
+import Regist from '@/components/regist'
 
 export default function Card() {
+  const [isModalOpen, setModalOpen] = useState(false)
+  const [isRegistOpen, setRegistOpen] = useState(false)
+
+  const openModal = () => setModalOpen(true)
+  const closeModal = () => setModalOpen(false)
+  const openRegist = () => setRegistOpen(true)
+  const closeRegist = () => setRegistOpen(false)
+
   return (
     <div className="w-full h-full flex flex-row mt-[120px]">
       <div className="left w-[487px] h-[510px] ml-[150px] flex flex-col mt-[109px]">
@@ -139,12 +151,20 @@ export default function Card() {
               Maximize Your Savings with Multiple Accounts for Different
               Occasions
             </div>
-            <button className="w-[248px] h-[42.8px] px-[13.8px] flex items-center justify-center text-white text-sm font-inter bg-blue-primary mt-[50.48px] rounded-lg hover:bg-[#311CCF] hover:scale-[1.01] ease-in-out">
+            <button
+              className="w-[248px] h-[42.8px] px-[13.8px] flex items-center justify-center text-white text-sm font-inter bg-blue-primary mt-[50.48px] rounded-lg hover:bg-[#311CCF] hover:scale-[1.01] ease-in-out"
+              onClick={openModal}
+            >
               Log In
             </button>
-            <button className="w-[248px] h-[42.8px] px-[13.8px] flex items-center justify-center text-blue-primary text-sm font-inter border border-blue-primary bg-white mt-[20.09px] rounded-lg hover:scale-[1.01] ease-in-out">
+            <LoginModal isOpen={isModalOpen} onClose={closeModal} />
+            <button
+              className="w-[248px] h-[42.8px] px-[13.8px] flex items-center justify-center text-blue-primary text-sm font-inter border border-blue-primary bg-white mt-[20.09px] rounded-lg hover:scale-[1.01] ease-in-out"
+              onClick={openRegist}
+            >
               Create Account
             </button>
+            <Regist isOpen={isRegistOpen} onClose={closeRegist} />
           </div>
         </div>
         <div className="deals absolute mt-[249px] ml-[5px] w-[280.35px] h-[216.72px] bg-white rounded-sm shadow-lg flex flex-col">
