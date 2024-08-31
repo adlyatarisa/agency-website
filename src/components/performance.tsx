@@ -4,9 +4,9 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 export default function Performance() {
-  const [openSections, setOpenSections] = useState([])
+  const [openSections, setOpenSections] = useState<number[]>([])
 
-  const toggleDropdown = (index) => {
+  const toggleDropdown = (index: number) => {
     setOpenSections((prevOpenSections) => {
       if (prevOpenSections.includes(index)) {
         // If section is already open, close it
