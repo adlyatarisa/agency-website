@@ -1,9 +1,32 @@
+'use client'
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Performance() {
+  const [openSections, setOpenSections] = useState([])
+
+  const toggleDropdown = (index) => {
+    setOpenSections((prevOpenSections) => {
+      if (prevOpenSections.includes(index)) {
+        // If section is already open, close it
+        return prevOpenSections.filter((sectionIndex) => sectionIndex !== index)
+      } else {
+        // Otherwise, open it
+        return [...prevOpenSections, index]
+      }
+    })
+  }
+
+  const faqData = [
+    'Custom Edit Tool Application',
+    'Built In Safety Chat Mode Enabled',
+    'User Friendly Interface',
+    'Active User Analytics',
+  ]
+
   return (
-    <div className="w-[1186px] h-[728px] my-[120px] mx-[150px] flex flex-row justify-between">
+    <div className="w-[1186px] h-[728px] my-[120px] mx-[150px] flex flex-row justify-between ">
       <div className="left">
         <div className="aura absolute w-[371px] h-[371px] opacity-40 bg-blue-light rounded-full blur-[300px] mt-[179px]"></div>
         <div className="phone w-[336px] h-full absolute bg-white rounded-[18.11px] shadow ml-[17px] overflow-hidden">
@@ -42,16 +65,16 @@ export default function Performance() {
                 alt="white chip"
                 className="absolute mt-[45.61px] ml-[123px]"
               />
-              <div className="text-right text-white text-[5.35px] font-thin font-['Inter'] mt-[45.61px] mr-3.5 mt-20">
+              <div className="text-right text-white text-[5.35px] font-thin font-jakarta mr-3.5 mt-20">
                 06/23
               </div>
             </div>
             <div className="card2 w-[226.36px] h-[144.65px] bg-blue-dark rounded-[17.30px] flex flex-col">
               <div className="flex justify-center gap-[106.52px] mt-[13.32px] mb-[8.47px]">
-                <div className="w-[56.89px] h-[13.92px] text-white text-[9.68px] font-semibold font-inter">
+                <div className="w-[56.89px] h-[13.92px] text-white text-[9.68px] font-semibold font-jakarta">
                   Credit Card
                 </div>
-                <div className="w-[33.89px] h-[7.87px] text-white text-[6.05px] font-semibold font-inter mt-[2.5px]">
+                <div className="w-[33.89px] h-[7.87px] text-white text-[6.05px] font-semibold font-jakarta mt-[2.5px]">
                   Bank Name
                 </div>
               </div>
@@ -77,19 +100,19 @@ export default function Performance() {
                 </div>
               </div>
               <div className="flex flex-row ml-[12px] gap-2.5">
-                <div className="w-[15.74px] h-[13.32px] text-white text-[4.84px] font-semibold font-['Plus Jakarta Sans']">
+                <div className="w-[15.74px] h-[13.32px] text-white text-[4.84px] font-semibold font-jakarta">
                   VALID THRU
                 </div>
-                <div className="w-[22.39px] h-[9.08px] text-white text-[6.05px] font-semibold font-['Plus Jakarta Sans'] mt-0.5">
+                <div className="w-[22.39px] h-[9.08px] text-white text-[6.05px] font-semibold font-jakarta mt-0.5">
                   00/00
                 </div>
               </div>
               <div className="flex flex-row gap-14">
                 <div className="flex flex-col mt-[4.3px] ml-[12px]">
-                  <div className="w-[67.10px] h-[11.29px] text-white text-[6.90px] font-bold font-['Plus Jakarta Sans'] uppercase leading-3 tracking-wide">
+                  <div className="w-[67.10px] h-[11.29px] text-white text-[6.90px] font-bold font-jakarta uppercase leading-3 tracking-wide">
                     Jacob Jones
                   </div>
-                  <div className="w-[84.66px] h-[11.29px] opacity-50 text-white text-[6.90px] font-bold font-['Plus Jakarta Sans'] uppercase leading-3 tracking-wide">
+                  <div className="w-[84.66px] h-[11.29px] opacity-50 text-white text-[6.90px] font-bold font-jakarta uppercase leading-3 tracking-wide">
                     Fintech INC.
                   </div>
                 </div>
@@ -127,7 +150,7 @@ export default function Performance() {
                   alt="currency sign"
                   className="mt-[-2.5px]"
                 />
-                <div className="w-[59.54px] text-[#fafcfe] text-base font-bold font-['Inter'] ">
+                <div className="w-[59.54px] text-[#fafcfe] text-base font-bold font-inter ">
                   3,40.00
                 </div>
               </div>
@@ -154,13 +177,13 @@ export default function Performance() {
             />
           </div>
           <div className="flex justify-center gap-10 mr-2 mt-1">
-            <div className="text-[#7e7e7e] text-[10.52px] font-medium font-['Inter']">
+            <div className="text-[#7e7e7e] text-[10.52px] font-medium font-inter">
               Withdraw
             </div>
-            <div className="text-[#7e7e7e] text-[10.52px] font-medium font-['Inter']">
+            <div className="text-[#7e7e7e] text-[10.52px] font-medium font-inter">
               Transfer
             </div>
-            <div className="text-[#7e7e7e] text-[10.52px] font-medium font-['Inter']">
+            <div className="text-[#7e7e7e] text-[10.52px] font-medium font-inter">
               Deposit
             </div>
           </div>
@@ -347,42 +370,32 @@ export default function Performance() {
           Etiam euismod odio euismod lacus fringilla hendrer.
         </div>
         <div className="w-[451px] h-[0px] border border-zinc-300 mt-[40px]"></div>
-        <div className="w-[451px] flex flex-row justify-between py-4">
-          <div className="text-[21px] text-blue-dark font-bold font-space leading-[44px]">
-            Custom Edit Tool Application
-          </div>
-          <button className="text-[21px] text-blue-primary font-bold font-space leading-[44px]">
-            +
-          </button>
+        <div className="space-y-4">
+          {faqData.map((question, index) => (
+            <div key={index}>
+              <div className="w-[451px] flex flex-row justify-between py-4">
+                <div className="text-[21px] text-blue-dark font-bold font-space leading-[44px]">
+                  {question}
+                </div>
+                <button
+                  onClick={() => toggleDropdown(index)}
+                  className="text-[21px] text-blue-primary font-bold font-space leading-[44px]"
+                >
+                  {openSections.includes(index) ? '-' : '+'}
+                </button>
+              </div>
+              {openSections.includes(index) && (
+                <div className="faq-answer w-[451px] py-4 overflow-hidden transition-max-height duration-500 ease-in-out">
+                  <p className="text-[16px] text-[#4F4F4F] opacity-70 font-inter leading-[24px]">
+                    Answer to {question} goes here. You can put detailed content
+                    here.
+                  </p>
+                </div>
+              )}
+              <div className="w-[451px] h-[0px] border border-zinc-300"></div>
+            </div>
+          ))}
         </div>
-        <div className="w-[451px] h-[0px] border border-zinc-300"></div>
-        <div className="w-[451px] flex flex-row justify-between py-4">
-          <div className="text-[21px] text-blue-dark font-bold font-space leading-[44px]">
-            Built In Safty Chat Mode Enabled
-          </div>
-          <div className="text-[21px] text-blue-primary font-bold font-space leading-[44px]">
-            +
-          </div>
-        </div>
-        <div className="w-[451px] h-[0px] border border-zinc-300"></div>
-        <div className="w-[451px] flex flex-row justify-between py-4">
-          <div className="text-[21px] text-blue-dark font-bold font-space leading-[44px]">
-            User Friendly Interface
-          </div>
-          <div className="text-[21px] text-blue-primary font-bold font-space leading-[44px]">
-            +
-          </div>
-        </div>
-        <div className="w-[451px] h-[0px] border border-zinc-300"></div>
-        <div className="w-[451px] flex flex-row justify-between py-4">
-          <div className="text-[21px] text-blue-dark font-bold font-space leading-[44px]">
-            Active User Analytics
-          </div>
-          <div className="text-[21px] text-blue-primary font-bold font-space leading-[44px]">
-            +
-          </div>
-        </div>
-        <div className="w-[451px] h-[0px] border border-zinc-300"></div>
       </div>
     </div>
   )
