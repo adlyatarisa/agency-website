@@ -31,6 +31,7 @@ const config: Config = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         space: ['Space Grotesk', 'sans-serif'],
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
       },
     },
   },

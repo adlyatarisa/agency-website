@@ -36,13 +36,13 @@ export default function LoginModal({
             </label>
             <input
               type="email"
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              className="w-full p-2 border border-gray-300 rounded opacity-50 mt-1"
               required
             />
           </div>
           <div className="mb-6">
             <div className="flex justify-between">
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-gray-700 ">
                 Password
               </label>
               <a href="#" className="text-blue-primary text-sm hover:underline">
@@ -51,7 +51,7 @@ export default function LoginModal({
             </div>
             <input
               type="password"
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              className="w-full p-2 border border-gray-300 opacity-50 rounded mt-1"
               required
             />
           </div>

@@ -30,7 +30,7 @@ export default function Regist({
             </label>
             <input
               type="email"
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              className="w-full p-2 border border-gray-300 rounded opacity-50 mt-1"
               required
             />
           </div>
@@ -40,7 +40,7 @@ export default function Regist({
             </label>
             <input
               type="password"
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              className="w-full p-2 border border-gray-300 rounded opacity-50 mt-1"
               required
             />
           </div>
@@ -50,7 +50,7 @@ export default function Regist({
             </label>
             <input
               type="username"
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              className="w-full p-2 border border-gray-300 opacity-50 rounded mt-1"
               required
             />
           </div>
