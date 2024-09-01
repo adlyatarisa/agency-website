@@ -4,6 +4,7 @@ import Pages from '@/components/pages'
 import Card from '@/components/card'
 import Performance from '@/components/performance'
 import Promote from '@/components/promote'
+import Achievement from '@/components/achievement'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Card />
       <Performance />
       <Promote />
+      <Achievement />
     </main>
   )
 }
