@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function appearance() {
   return (
-    <div className="w-[1331px] h-[617px] flex flex-row border border-black mx-[55px] mb-10">
+    <div className="w-[1331px] h-[617px] flex flex-row mx-[55px] mb-10">
       <div
         className="phone w-[285px] h-full bg-white shadow-md rounded-[20px] flex items-center flex-col overflow-hidden"
         style={{ boxShadow: '0 0 22px rgba(0, 0, 0, 0.08)' }}
@@ -443,7 +443,323 @@ export default function appearance() {
             />
           </div>
         </div>
-        <div></div>
+        <div className="flex flex-col">
+          <div className="flex flex-row w-[931.36px] h-[54.87px] border-b items-center">
+            <div className="w-[327px] h-[27.4px] flex flex-row items-center">
+              <div className="text-[#11263c] text-[10.97px] font-semibold font-inter leading-none ml-[24px]">
+                Dashboard
+              </div>
+              <div className="text-[#d0d1d2] text-[10.97px] font-semibold font-inter leading-none ml-[27.43px]">
+                Advanced Quarry
+              </div>
+              <div className="text-[#d0d1d2] text-[10.97px] font-semibold font-inter leading-none ml-[27.43px]">
+                Events
+              </div>
+              <Image
+                src="/appearance/search.svg"
+                width={18}
+                height={18}
+                alt="search"
+                className="ml-[27.43px]"
+              />
+            </div>
+          </div>
+          <div className="flex flex-row">
+            <div className="w-[713px] h-[561px] flex flex-col ml-[24px] pt-[23.32px]">
+              <div className="flex flex-row ">
+                <div className="text-[#412e8a]/90 text-[10.23px] font-bold font-inter leading-[13.72px]">
+                  DASHBOARD
+                </div>
+                <div className="text-[#d0d1d2] text-[10.23px] font-medium font-inter leading-[13.72px]">
+                  BITFOREX.COM
+                </div>
+              </div>
+              <div className="flex flex-row gap-[17.2px] mt-[13.72px]">
+                <Image
+                  src="/appearance/moon.png"
+                  width={30}
+                  height={30}
+                  alt="moon"
+                />
+                <div className="text-[#11263c] text-xl font-bold font-inter leading-7">
+                  wubin.design
+                </div>
+              </div>
+              <div className="flex flex-row items-center mt-[18px]">
+                <div className="text-[#11263c] text-sm font-bold font-inter leading-tight">
+                  Total visits
+                </div>
+                <div className="text-[#d0d1d2] text-xs font-medium font-inter leading-[13.72px] ml-[330px]">
+                  Provisions Month
+                </div>
+                <div className="h-[21.49px] px-[6.86px] py-[2.74px] bg-white rounded-sm border border-[#ece9f1] justify-start items-center gap-[6.86px] inline-flex ml-4">
+                  <div className="text-[#11263c] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                    March 2020
+                  </div>
+                  <Image
+                    src="/appearance/calendar.svg"
+                    width={11}
+                    height={11}
+                    alt="calendar"
+                  />
+                </div>
+                <div className="h-[20.58px] p-[5.49px] bg-white rounded-sm border border-[#ece9f1] justify-start items-center gap-[6.86px] inline-flex ml-4">
+                  <Image
+                    src="/appearance/more-horizontal.svg"
+                    width={11}
+                    height={11}
+                    alt="more horizontal"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-row mt-[20.57px]">
+                <div className="flex flex-col gap-[33.38px]">
+                  <div className="text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                    260M
+                  </div>
+                  <div className="text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                    210M
+                  </div>
+                  <div className="text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                    160M
+                  </div>
+                  <div className="text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                    110M
+                  </div>
+                </div>
+                <div className="flex flex-col ml-[21.27px]">
+                  <div className="w-[621.37px] h-[148.14px] relative">
+                    <div className="w-[621.37px] h-[0px] left-0 top-0 absolute border border-[#ece9f1]"></div>
+                    <div className="w-[621.37px] h-[0px] left-0 top-[49.38px] absolute border border-[#ece9f1]"></div>
+                    <div className="w-[621.37px] h-[0px] left-0 top-[98.76px] absolute border border-[#ece9f1]"></div>
+                    <div className="w-[621.37px] h-[0px] left-0 top-[148.14px] absolute border border-[#ece9f1]"></div>
+                  </div>
+                  <Image
+                    src="/appearance/graph2.svg"
+                    width={622}
+                    height={134}
+                    alt="graph"
+                    className="absolute mt-8"
+                  />
+                  <Image
+                    src="/appearance/grad.svg"
+                    width={622}
+                    height={134}
+                    alt="graph"
+                    className="absolute"
+                  />
+                  <Image
+                    src="/appearance/graph.svg"
+                    width={622}
+                    height={134}
+                    alt="graph"
+                    className="absolute"
+                  />
+                  <div className="w-[620.33px] h-4 mt-3 relative">
+                    <div className="left-0 top-0 absolute text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      1
+                    </div>
+                    <div className="left-[100.13px] top-[-0px] absolute text-center text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      5
+                    </div>
+                    <div className="left-[200.95px] top-[-0px] absolute text-center text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      10
+                    </div>
+                    <div className="left-[303.82px] top-[-0px] absolute text-center text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      15
+                    </div>
+                    <div className="left-[406.01px] top-[-0px] absolute text-center text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      20
+                    </div>
+                    <div className="left-[508.89px] top-[-0px] absolute text-center text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      25
+                    </div>
+                    <div className="left-[608.33px] top-[-0px] absolute text-right text-[#a2a3a5] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      30
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row mt-[16.2px]">
+                <div className="flex flex-col">
+                  <div className="text-[#11263c] text-md font-bold font-inter leading-tight">
+                    Perpetual
+                  </div>
+                  <div className="flex flex-row mt-2 items-center justify-center">
+                    <Image
+                      src="/appearance/elips.png"
+                      width={137}
+                      height={137}
+                      alt="diagram"
+                    />
+                    <div className="flex flex-col ml-[17.43px] gap-[17.38px]">
+                      <div className="flex flex-row ">
+                        <div className="w-[20.58px] h-[15.09px] relative">
+                          <div className="w-[20.58px] h-[2.74px] left-[-0px] top-[6.17px] absolute bg-[#7459d9] rounded-[68.58px]" />
+                        </div>
+                        <div className="flex flex-col ml-3">
+                          <div className="text-[#d0d1d2] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                            Google.com .Inc
+                          </div>
+                          <div className="text-[#11263c] text-[9.60px] font-semibold font-inter leading-[15.09px]">
+                            3,124,213 users
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex flex-row ">
+                        <div className="w-[20.58px] h-[15.09px] relative">
+                          <div className="w-[20.58px] h-[2.74px] left-[-0px] top-[6.17px] absolute bg-[#7459d9] rounded-[68.58px]" />
+                        </div>
+                        <div className="flex flex-col ml-3">
+                          <div className="text-[#d0d1d2] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                            Google.com .Inc
+                          </div>
+                          <div className="text-[#11263c] text-[9.60px] font-semibold font-inter leading-[15.09px]">
+                            3,124,213 users
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex flex-row ">
+                        <div className="w-[20.58px] h-[15.09px] relative">
+                          <div className="w-[20.58px] h-[2.74px] left-[-0px] top-[6.17px] absolute bg-[#7459d9] rounded-[68.58px]" />
+                        </div>
+                        <div className="flex flex-col ml-3">
+                          <div className="text-[#d0d1d2] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                            Google.com .Inc
+                          </div>
+                          <div className="text-[#11263c] text-[9.60px] font-semibold font-inter leading-[15.09px]">
+                            3,124,213 users
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col ml-[30px]">
+                  <div className="text-[#11263c] text-md font-bold font-inter leading-tight mb-[34.29px]">
+                    Active Percent
+                  </div>
+                  <div className="flex flex-row items-center mb-2">
+                    <div className="text-center text-[#11263c] text-xl font-bold font-inter leading-loose">
+                      594
+                    </div>
+                    <div className="text-[#d0d1d2] text-[9.60px] font-normal font-inter leading-[15.09px] ml-1">
+                      Total
+                    </div>
+                  </div>
+                  <div className="relative">
+                    <div className="w-[333.31px] h-[10.29px] absolute bg-[#7459d9]/20 rounded-[68.58px]" />
+                    <div className="w-[76.13px] h-[10.29px] bg-[#7459d9] rounded-[68.58px]" />
+                  </div>
+                  <div className="mt-2 flex flex-row">
+                    <div className="w-[20.58px] h-[15.09px] relative">
+                      <div className="w-[20.58px] h-[2.74px] left-0 top-[6.17px] absolute bg-[#7459d9] rounded-[68.58px]" />
+                    </div>
+                    <div className="ml-1 text-[#d0d1d2] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      Online
+                    </div>
+                    <div className="ml-14 w-[20.58px] h-[15.09px] relative">
+                      <div className="w-[20.58px] h-[2.74px] left-0 top-[6.17px] absolute bg-[#7459D9]/20 rounded-[68.58px]" />
+                    </div>
+                    <div className="ml-1 text-[#d0d1d2] text-[9.60px] font-normal font-inter leading-[15.09px]">
+                      Offline
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-[62px] mt-3 ml-3">
+                    <div className="text-[#11263c] text-[9.60px] font-semibold font-inter leading-[15.09px]">
+                      179 users
+                    </div>
+                    <div className="text-[#11263c] text-[9.60px] font-semibold font-inter leading-[15.09px]">
+                      394 users
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[#F8F9FE] w-[196px] rounded-[20px]">
+              <Image
+                src="/appearance/img3.png"
+                width={280}
+                height={195.3}
+                alt="diagram"
+                className="absolute shadow-xl rounded-[10px] ml-[-50px] mt-[-20px]"
+              />
+              <div className="w-[270px] h-[288px] py-[10.8px] bg-white rounded-[10px] ml-[-50px] mt-[180px] shadow-xl absolute flex flex-col ">
+                <div className="w-full h-[51.8px] flex flex-row items-center gap-[32px]">
+                  <Image
+                    src="/appearance/color2.svg"
+                    width={53}
+                    height={53}
+                    alt="google"
+                    className="ml-3"
+                  />
+                  <div className="flex flex-col">
+                    <div className="w-[162px] text-[#d0d1d2] text-[15.12px] font-normal font-inter leading-normal">
+                      Stock trading
+                    </div>
+                    <div className="text-[#11263c] text-[15.12px] font-semibold font-inter leading-normal">
+                      Google
+                    </div>
+                    <div className="w-[172.80px] h-[0px] border border-[#ece9f1] mt-2"></div>
+                  </div>
+                </div>
+                <div className="w-full h-[51.8px] flex flex-row items-center gap-[32px] mt-5">
+                  <Image
+                    src="/appearance/color3.svg"
+                    width={53}
+                    height={53}
+                    alt="google"
+                    className="ml-3"
+                  />
+                  <div className="flex flex-col">
+                    <div className="w-[162px] text-[#d0d1d2] text-[15.12px] font-normal font-inter leading-normal">
+                      Stock trading
+                    </div>
+                    <div className="text-[#11263c] text-[15.12px] font-semibold font-inter leading-normal">
+                      Foursquare
+                    </div>
+                    <div className="w-[172.80px] h-[0px] border border-[#ece9f1] mt-2"></div>
+                  </div>
+                </div>
+                <div className="w-full h-[51.8px] flex flex-row items-center gap-[32px] mt-5">
+                  <Image
+                    src="/appearance/color1.svg"
+                    width={53}
+                    height={53}
+                    alt="google"
+                    className="ml-3"
+                  />
+                  <div className="flex flex-col">
+                    <div className="w-[162px] text-[#d0d1d2] text-[15.12px] font-normal font-inter leading-normal">
+                      Stock trading
+                    </div>
+                    <div className="text-[#11263c] text-[15.12px] font-semibold font-inter leading-normal">
+                      Kickstarter
+                    </div>
+                    <div className="w-[172.80px] h-[0px] border border-[#ece9f1] mt-2"></div>
+                  </div>
+                </div>
+                <div className="w-full h-[51.8px] flex flex-row items-center gap-[32px] mt-5">
+                  <Image
+                    src="/appearance/color.svg"
+                    width={53}
+                    height={53}
+                    alt="google"
+                    className="ml-3"
+                  />
+                  <div className="flex flex-col">
+                    <div className="w-[162px] text-[#d0d1d2] text-[15.12px] font-normal font-inter leading-normal">
+                      Stock trading
+                    </div>
+                    <div className="text-[#11263c] text-[15.12px] font-semibold font-inter leading-normal">
+                      Kakaotalk
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
