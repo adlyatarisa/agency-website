@@ -192,7 +192,7 @@ export default function promote() {
       </div>
       <div className="w-[1170px] h-[327px] mt-[102px] flex justify-center items-center flex-row gap-[30px]">
         <div
-          className="w-[270px] h-[326px] bg-white shadow flex flex-col justify-center items-center hover:scale-105"
+          className="w-[270px] h-[326px] bg-white shadow flex flex-col justify-center items-center transition duration-300 ease-in-out hover:scale-105"
           style={{ boxShadow: '0 0 22px rgba(0, 0, 0, 0.08)' }}
         >
           <Image src="/promote/lamp.png" width={70} height={70} alt="lamp" />
@@ -204,7 +204,7 @@ export default function promote() {
           </div>
         </div>
         <div
-          className="w-[270px] h-[326px] bg-white shadow flex flex-col justify-center items-center hover:scale-105"
+          className="w-[270px] h-[326px] bg-white shadow flex flex-col justify-center items-center transition duration-300 ease-in-out hover:scale-105"
           style={{ boxShadow: '0 0 22px rgba(0, 0, 0, 0.08)' }}
         >
           <Image src="/promote/pen.png" width={70} height={70} alt="pen" />
@@ -216,7 +216,7 @@ export default function promote() {
           </div>
         </div>
         <div
-          className="w-[270px] h-[326px] bg-white shadow flex flex-col justify-center items-center hover:scale-105"
+          className="w-[270px] h-[326px] bg-white shadow flex flex-col justify-center items-center transition duration-300 ease-in-out hover:scale-105"
           style={{ boxShadow: '0 0 22px rgba(0, 0, 0, 0.08)' }}
         >
           <Image src="/promote/task.png" width={70} height={70} alt="pen" />
@@ -228,7 +228,7 @@ export default function promote() {
           </div>
         </div>
         <div
-          className="w-[270px] h-[326px] bg-white shadow flex flex-col justify-center items-center hover:scale-105"
+          className="w-[270px] h-[326px] bg-white shadow flex flex-col justify-center items-center transition duration-300 ease-in-out hover:scale-105"
           style={{ boxShadow: '0 0 22px rgba(0, 0, 0, 0.08)' }}
         >
           <Image src="/promote/maze.png" width={70} height={70} alt="pen" />
