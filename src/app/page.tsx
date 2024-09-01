@@ -5,6 +5,7 @@ import Card from '@/components/card'
 import Performance from '@/components/performance'
 import Promote from '@/components/promote'
 import Achievement from '@/components/achievement'
+import Appearance from '@/components/appearance'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Performance />
       <Promote />
       <Achievement />
+      <Appearance />
     </main>
   )
 }
