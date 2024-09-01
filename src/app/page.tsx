@@ -3,6 +3,8 @@ import Hero from '@/components/hero'
 import Pages from '@/components/pages'
 import Card from '@/components/card'
 import Performance from '@/components/performance'
+import Promote from '@/components/promote'
+
 export default function Home() {
   return (
     <main className="bg-white font-Inter">
@@ -10,6 +12,7 @@ export default function Home() {
       <Pages />
       <Card />
       <Performance />
+      <Promote />
     </main>
   )
 }
